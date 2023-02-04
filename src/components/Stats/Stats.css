@@ -1,0 +1,187 @@
+.stats{
+    padding: -12rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 32vh;
+    width: 100%;
+    margin-bottom: -1rem;
+    margin-top: 5rem;
+    font-family: 'Roboto', sans-serif;
+    /* margin-bottom: -13rem; */
+}
+
+.stats1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(125, 129, 217); */
+}
+
+.stats{
+    /* background-color: rgb(125, 129, 217); */
+    background-image: url("data:image/jpeg;base64,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");
+    display: flex;
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    flex-direction: row;
+    position: relative;
+    margin-top: 11rem; 
+    width: 100%;
+}
+
+.stats2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin: 0rem 2rem;
+    width: 100%;
+    gap: -0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* padding: 1rem 0rem; */
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 0.5px;
+    height: 6.5rem;
+    background-color: rgb(211, 210, 210);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0rem;
+    font-weight: bold;
+}
+
+.show>*{
+    margin: 0.5rem 0rem;
+    font-weight: bolder;
+}
+
+.show1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0rem;
+    font-size: 2.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.show1>pre{
+    /* margin: 0.5rem 0rem; */
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 0.5rem;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.y{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.y:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    font-weight: 900;
+    outline: none;
+    text-decoration: none;
+}
+
+/* @property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+.n, .m, .o, .p{
+    font-family: 'Roboto', sans-serif;
+    animation: counter 0.8s linear alternate forwards;
+    counter-reset: num var(--num);
+}
+.n::after {
+    content: counter(num);
+}
+@keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 700;
+    }
+  }
+
+.m::after {
+    content: counter(num);
+}
+
+@keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 3;
+    }
+  }
+.o::after {
+    content: counter(num);
+}
+
+@keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 80;
+    }
+  }
+
+.p::after {
+    content: counter(num);
+}
+
+@keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 260;
+    }
+  } */
+
+  
